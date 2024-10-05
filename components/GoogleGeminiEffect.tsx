@@ -29,6 +29,8 @@ export function GoogleGeminiEffectDemo() {
           pathLengthFourth,
           pathLengthFifth,
         ]}
+        title="Welcome to my Portfolio"
+        description="One commit a day keeps the bug away"
       />
     </div>
   );
