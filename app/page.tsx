@@ -1,4 +1,5 @@
 import { GoogleGeminiEffectDemo } from "@/components/GoogleGeminiEffect";
+import { TimelineDemo } from "@/components/Timeline";
 
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <div>
         <GoogleGeminiEffectDemo />
+        <TimelineDemo />
       </div>
     </main>
   );
