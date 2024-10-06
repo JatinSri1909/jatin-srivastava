@@ -11,6 +11,7 @@
   "dependencies": {
     "@tabler/icons-react": "^3.19.0",
     "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
     "framer-motion": "^11.11.1",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.13",
@@ -18,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icon-cloud": "^4.1.4",
+    "react-spring": "^9.7.4",
     "tailwind-merge": "^2.5.3"
   },
   "devDependencies": {
