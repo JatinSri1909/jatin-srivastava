@@ -21,7 +21,7 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-40", className)}>
-      <p className="md:text-7xl pb-4 bg-clip-text text-center text-8xl font-semibold text-transparent dark:from-white dark:to-slate-900/10 bg-gradient-to-b from-black to-gray-300/80">
+      <p className="md:text-7xl pb-4 bg-clip-text text-center text-5xl font-semibold text-transparent dark:from-white dark:to-slate-900/10 bg-gradient-to-b from-black to-gray-300/80">
         {title || `Build with Aceternity UI`}
       </p>
       <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">

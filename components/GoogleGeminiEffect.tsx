@@ -30,7 +30,7 @@ export function GoogleGeminiEffectDemo() {
           pathLengthFifth,
         ]}
         title="Welcome to my Portfolio"
-        description="One commit a day keeps the bug away"
+        description={"\"One commit a day keeps the bug away\""}
       />
     </div>
   );
