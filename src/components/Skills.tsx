@@ -23,7 +23,7 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
               {skillGroup.items.map((skill, skillIndex) => (
                 <div
                   key={skillIndex}
-                  className="flex items-center gap-2 px-3 py-2 bg-black dark:bg-white text-white dark:text-black"
+                  className="flex items-center gap-2 px-3 py-2 border border-black dark:border-white text-black dark:text-white rounded-md transition-all duration-300 hover:scale-110 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md"
                 >
                   <TechLogo name={skill} className="w-5 h-5" />
                   <span className="text-base font-medium">{skill}</span>
