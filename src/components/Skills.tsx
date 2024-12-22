@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './Container';
 import { Skill } from '../types/resume';
-import { TechLogo } from './TechLogo';
+import { TechLogo, isLogoAvailable } from './TechLogo';  // Add this import
 
 interface SkillsProps {
   skills: Skill[];
@@ -25,7 +25,9 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
                   key={skillIndex}
                   className="flex items-center gap-2 px-3 py-2 border border-black dark:border-white text-black dark:text-white rounded-md transition-all duration-300 hover:scale-110 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md"
                 >
-                  <TechLogo name={skill} className="w-5 h-5" />
+                  {isLogoAvailable(skill) && (
+                    <TechLogo name={skill} className="w-5 h-5" />
+                  )}
                   <span className="text-base font-medium">{skill}</span>
                 </div>
               ))}
