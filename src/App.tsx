@@ -3,34 +3,43 @@ import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
-import { ThemeToggle } from './components/ThemeToggle';
+import { Navbar } from './components/navigation/Navbar';
+import { Dock } from './components/navigation/Dock';
 import { resumeData } from './data/resume';
 
-function App() {
+export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-      <ThemeToggle />
+      <Navbar />
       <Header 
         data={{
           name: resumeData.name,
           title: resumeData.title,
           bio: resumeData.bio,
-          location: resumeData.location,
-          email: resumeData.email,
-          socialLinks: resumeData.socialLinks
+          location: resumeData.location
         }}
       />
       <main>
-        <About 
-          interests={resumeData.interests}
-          learning={resumeData.learning}
-        />
-        <Skills skills={resumeData.skills} />
-        <Projects projects={resumeData.projects} />
-        <Contact />
+        <section id="about">
+          <About 
+            interests={resumeData.interests}
+            learning={resumeData.learning}
+          />
+        </section>
+        <section id="skills">
+          <Skills skills={resumeData.skills} />
+        </section>
+        <section id="projects">
+          <Projects projects={resumeData.projects} />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
+      <Dock 
+        socialLinks={resumeData.socialLinks}
+        email={resumeData.email}
+      />
     </div>
   );
 }
-
-export default App;

@@ -10,61 +10,63 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <Container className="py-16">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
+      <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         Projects
       </h2>
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div 
             key={index} 
-            className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col md:flex-row"
+            className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden h-[400px] flex flex-col"
           >
-            {project.imageUrl && (
-              <div className="md:w-2/5">
+            <div className="h-48">
+              {project.imageUrl && (
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-64 md:h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
-              </div>
-            )}
-            <div className="p-6 md:w-3/5">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              )}
+            </div>
+            <div className="p-4 flex flex-col flex-1">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-gray-600 dark:text-gray-400 mb-4 text-xs leading-relaxed line-clamp-3">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-1.5 mb-4">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 
-                      dark:text-gray-300 rounded-full text-sm"
+                    className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 text-gray-700 
+                      dark:text-gray-300 rounded text-[10px]"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-3 mt-auto">
                 {project.githubUrl && (
                   <a
                     href={project.githubUrl}
-                    className="flex items-center gap-1 text-gray-600 dark:text-gray-400 
-                      hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 
+                      dark:hover:text-gray-100 transition-colors"
                   >
-                    <Github size={18} />
-                    <span>Code</span>
+                    <Github size={16} />
                   </a>
                 )}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
-                    className="flex items-center gap-1 text-gray-600 dark:text-gray-400 
-                      hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 
+                      dark:hover:text-gray-100 transition-colors"
                   >
-                    <ExternalLink size={18} />
-                    <span>Live Demo</span>
+                    <ExternalLink size={16} />
                   </a>
                 )}
               </div>

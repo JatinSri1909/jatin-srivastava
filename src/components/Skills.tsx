@@ -1,7 +1,6 @@
-import React from 'react';
 import { Container } from './Container';
 import { Skill } from '../types/resume';
-import { TechLogo, isLogoAvailable } from './TechLogo';  // Add this import
+import { SkillIcon } from './SkillIcon';
 
 interface SkillsProps {
   skills: Skill[];
@@ -23,12 +22,12 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
               {skillGroup.items.map((skill, skillIndex) => (
                 <div
                   key={skillIndex}
-                  className="flex items-center gap-2 px-3 py-2 border border-black dark:border-white text-black dark:text-white rounded-md transition-all duration-300 hover:scale-110 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md"
+                  className="flex items-center gap-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-700 
+                    rounded-md hover:border-gray-900 dark:hover:border-gray-300 transition-colors
+                    hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
-                  {isLogoAvailable(skill) && (
-                    <TechLogo name={skill} className="w-5 h-5" />
-                  )}
-                  <span className="text-base font-medium">{skill}</span>
+                  <SkillIcon name={skill} className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                  <span className="text-base font-medium text-gray-900 dark:text-gray-100">{skill}</span>
                 </div>
               ))}
             </div>

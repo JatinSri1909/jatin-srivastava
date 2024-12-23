@@ -4,8 +4,8 @@ export const resumeData: ResumeData = {
   name: "Jatin Srivastava",
   title: "Full Stack Developer",
   bio: "I'm a passionate programmer and technology enthusiast who thrives on learning and working with cutting-edge technologies. I'm always exploring new ideas and challenging myself to grow as a developer.",
-  location: "New Delhi,India",
-  email: "jatin.srivastaval1909@gmail.com",
+  location: "New Delhi, India",
+  email: "jatinmavrik007@gmail.com",
   socialLinks: {
     github: "https://github.com/JatinSri1909",
     linkedin: "https://www.linkedin.com/in/jatin-srivastava-57a434256",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './Container';
-import { Book, Code, Globe } from 'lucide-react';
+import { Book, Globe } from 'lucide-react';
 
 interface AboutProps {
   interests: string[];

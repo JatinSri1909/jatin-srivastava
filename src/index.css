@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 14px;
+  }
+  
   body {
     font-family: "Cascadia Code", Menlo, Monaco, Consolas, "Courier New", monospace;
   }
