@@ -14,8 +14,9 @@ interface DockProps {
 export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
   return (
     <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 
-      backdrop-blur-sm rounded-full px-4 md:px-6 py-2 md:py-3 border border-gray-200 dark:border-gray-800 z-50 w-[90%] md:w-auto">
-      <div className="flex items-center justify-center md:justify-start gap-4 md:gap-6">
+      backdrop-blur-sm rounded-full px-2 md:px-6 py-2 md:py-3 border border-gray-200 dark:border-gray-800 z-50 
+      w-auto min-w-[180px] max-w-[95%] md:w-auto">
+      <div className="flex items-center justify-between md:justify-start gap-2 md:gap-6">
         {socialLinks.github && (
           <a
             href={socialLinks.github}
@@ -23,7 +24,7 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
-            <Github className="w-5 h-5" />
+            <Github className="w-4 h-4 md:w-5 md:h-5" />
           </a>
         )}
         {socialLinks.linkedin && (
@@ -33,7 +34,7 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
-            <Linkedin className="w-5 h-5" />
+            <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
           </a>
         )}
         {socialLinks.twitter && (
@@ -43,16 +44,16 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
-            <Twitter className="w-5 h-5" />
+            <Twitter className="w-4 h-4 md:w-5 md:h-5" />
           </a>
         )}
         <a
           href={`mailto:${email}`}
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
         >
-          <Mail className="w-5 h-5" />
+          <Mail className="w-4 h-4 md:w-5 md:h-5" />
         </a>
-        <div className="w-px h-5 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-px h-4 md:h-5 mx-0.5 md:mx-0 bg-gray-200 dark:bg-gray-800" />
         <ThemeToggle />
       </div>
     </div>
