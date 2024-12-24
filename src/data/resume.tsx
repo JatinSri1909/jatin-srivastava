@@ -9,6 +9,7 @@ export const resumeData: ResumeData = {
   socialLinks: {
     github: "https://github.com/JatinSri1909",
     linkedin: "https://www.linkedin.com/in/jatin-srivastava-57a434256",
+    twitter: "https://x.com/JatinSriva36542",
   },
   interests: [
     "Web Development: Crafting responsive and efficient web applications",
