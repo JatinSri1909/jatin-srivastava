@@ -9,6 +9,9 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         Projects
       </h2>
+      <p className="text-gray-600 dark:text-gray-400 mb-6">
+        I like building things. I've worked on variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div 
