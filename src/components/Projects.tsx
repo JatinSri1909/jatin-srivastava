@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { Container } from './Container';
-import { Project, ProjectsProps } from '../types/resume';
+import { ProjectsProps } from '../types/resume';
 
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (

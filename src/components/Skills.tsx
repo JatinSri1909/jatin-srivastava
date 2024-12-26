@@ -1,5 +1,5 @@
 import { Container } from './Container';
-import { Skill, SkillsProps } from '../types/resume';
+import { SkillsProps } from '../types/resume';
 import { SkillIcon } from './SkillIcon';
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
