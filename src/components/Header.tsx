@@ -21,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
         <h2 className="text-2xl text-gray-600 dark:text-gray-400">
           {data.title}
         </h2>
-        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed text-justify">
           {data.bio}
         </p>
         

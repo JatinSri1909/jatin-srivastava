@@ -60,6 +60,22 @@ export const resumeData: ResumeData = {
       technologies: ["JavaScript", "HTML", "CSS", "REST API"],
       imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=2424",
       githubUrl: "https://github.com/JatinSri1909"
+    },
+    {
+      title: "Chat Application",
+      description: "A real-time chat application built with WebSocket technology, featuring private messaging, group chats, and emoji support. Implements secure authentication and message persistence.",
+      technologies: ["React", "Node.js", "WebSocket", "MongoDB", "Express"],
+      imageUrl: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&q=80&w=2424",
+      githubUrl: "https://github.com/JatinSri1909",
+      liveUrl: "https://chat-app-demo.example.com"
+    },
+    {
+      title: "Task Management System",
+      description: "A comprehensive task management solution with features like task categorization, priority setting, deadline tracking, and team collaboration capabilities.",
+      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
+      imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=2424",
+      githubUrl: "https://github.com/JatinSri1909",
+      liveUrl: "https://task-manager-demo.example.com"
     }
   ],
   experience: [],
