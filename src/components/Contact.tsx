@@ -4,7 +4,7 @@ import { Mail, MessageSquare } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   return (
-    <Container className="py-16">
+    <Container className="py-10">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         Let's Connect
       </h2>

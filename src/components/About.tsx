@@ -9,7 +9,7 @@ interface AboutProps {
 
 export const About: React.FC<AboutProps> = ({ interests, learning }) => {
   return (
-    <Container className="py-16">
+    <Container className="py-10">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         About Me
       </h2>

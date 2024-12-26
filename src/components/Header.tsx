@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
   const lastName = data.name.split(' ').slice(1).join(' ');
 
   return (
-    <Container className="py-20">
+    <Container className="py-8">
       <div className="space-y-8">
         <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-100">
           Hi, I'm {firstName}{' '}

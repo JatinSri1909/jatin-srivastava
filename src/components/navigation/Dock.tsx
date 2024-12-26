@@ -22,7 +22,7 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="text-white/80 hover:text-white transition-colors"
           >
             <Github className="w-4 h-4 md:w-5 md:h-5" />
           </a>
@@ -32,7 +32,7 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="text-white/80 hover:text-white transition-colors"
           >
             <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
           </a>
@@ -42,18 +42,18 @@ export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
             href={socialLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="text-white/80 hover:text-white transition-colors"
           >
             <Twitter className="w-4 h-4 md:w-5 md:h-5" />
           </a>
         )}
         <a
           href={`mailto:${email}`}
-          className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          className="text-white/80 hover:text-white transition-colors"
         >
           <Mail className="w-4 h-4 md:w-5 md:h-5" />
         </a>
-        <div className="w-px h-4 md:h-5 mx-0.5 md:mx-0 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-px h-4 md:h-5 mx-0.5 md:mx-0 bg-white/20" />
         <ThemeToggle />
       </div>
     </div>

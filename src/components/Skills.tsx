@@ -8,7 +8,7 @@ interface SkillsProps {
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <Container className="py-16">
+    <Container className="py-10">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-12">
         Skills
       </h2>
