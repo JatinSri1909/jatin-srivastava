@@ -48,34 +48,36 @@ export const resumeData: ResumeData = {
   ],
   projects: [
     {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React and Tailwind CSS, featuring dark mode support and a clean, minimalist design.",
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      title: "Photofy",
+      description: "Developed a cross-platform image editing web app with features like restoration, recoloring, and background elimination for user-uploaded photos. Integrated Cloudinary for efficient image processing and improved overall application performance.",
+      technologies: ["TypeScript", "Next.js 14", "Tailwind CSS", "Cloudinary", "Stripe", "Clerk Auth", "MongoDB"],
       imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=2424",
-      githubUrl: "https://github.com/JatinSri1909"
+      githubUrl: "https://github.com/JatinSri1909",
+      liveUrl: "https://photofy.example.com",
     },
     {
-      title: "Weather Dashboard",
-      description: "A weather application that provides real-time weather information using OpenWeatherMap API, featuring a clean UI and detailed weather forecasts.",
-      technologies: ["JavaScript", "HTML", "CSS", "REST API"],
+      title: "Notes API",
+      description: "Constructed a comprehensive RESTful API for handling user notes with advanced token-based authentication strategies. Implemented intuitive API routes for create, read, update, and delete operations.",
+      technologies: ["JavaScript", "Express", "Node", "MongoDB", "JWT", "Bcrypt", "RESTful API"],
       imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=2424",
-      githubUrl: "https://github.com/JatinSri1909"
+      githubUrl: "https://github.com/JatinSri1909",
+      liveUrl: "https://notes-api.example.com",
     },
     {
-      title: "Chat Application",
-      description: "A real-time chat application built with WebSocket technology, featuring private messaging, group chats, and emoji support. Implements secure authentication and message persistence.",
-      technologies: ["React", "Node.js", "WebSocket", "MongoDB", "Express"],
+      title: "Multiplayer Chess Game",
+      description: "Developed a real-time chess platform that accommodated up to 100 simultaneous games without user login. Established real-time communication among players by implementing Socket.io.",
+      technologies: ["JavaScript", "React", "Express", "Node", "Socket.io"],
       imageUrl: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&q=80&w=2424",
       githubUrl: "https://github.com/JatinSri1909",
-      liveUrl: "https://chat-app-demo.example.com"
+      liveUrl: "https://chess-game.example.com",
     },
     {
-      title: "Task Management System",
-      description: "A comprehensive task management solution with features like task categorization, priority setting, deadline tracking, and team collaboration capabilities.",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
-      imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=2424",
+      title: "Online Code Compiler",
+      description: "Designed intuitive interfaces for an all-in-one coding solution where users could run programs seamlessly in popular languages such as C++ and Python. Established an enhanced task queue with BullMQ for real-time job management.",
+      technologies: ["JavaScript", "React", "Express", "Node", "BullMQ", "MongoDB"],
+      imageUrl: "https://plus.unsplash.com/premium_photo-1723849222657-e1e48a0a306e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcGlsZXJ8ZW58MHx8MHx8fDA%3D",
       githubUrl: "https://github.com/JatinSri1909",
-      liveUrl: "https://task-manager-demo.example.com"
+      liveUrl: "https://chess-game.example.com",
     }
   ],
   experience: [],

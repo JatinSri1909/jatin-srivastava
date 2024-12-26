@@ -17,7 +17,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         {projects.map((project, index) => (
           <div 
             key={index} 
-            className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden h-[400px] flex flex-col"
+            className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col"
           >
             <div className="h-48">
               {project.imageUrl && (
@@ -32,7 +32,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4 text-xs leading-relaxed line-clamp-3 text-justify">
+              <p className="text-gray-600 dark:text-gray-400 mb-4 text-xs leading-relaxed text-justify h-24 overflow-hidden">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-1.5 mb-4">
