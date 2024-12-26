@@ -9,8 +9,8 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <Container className="py-16">
-      <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-8">
+    <Container className="py-10">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
