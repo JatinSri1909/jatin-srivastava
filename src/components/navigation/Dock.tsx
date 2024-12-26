@@ -1,15 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { ThemeToggle } from '../ThemeToggle';
-
-interface DockProps {
-  socialLinks: {
-    github?: string;
-    linkedin?: string;
-    twitter?: string;
-  };
-  email: string;
-}
+import { DockProps } from '../../types/resume';
 
 export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
   return (

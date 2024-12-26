@@ -46,3 +46,25 @@ export interface ResumeData {
   education: Education[];
   projects: Project[];
 }
+
+export interface ProjectsProps {
+  projects: Project[];
+}
+
+export interface SkillsProps {
+  skills: Skill[];
+}
+
+export interface AboutProps {
+  interests: string[];
+  learning: string[];
+}
+
+export interface HeaderProps {
+  data: Pick<ResumeData, 'name' | 'title' | 'bio' | 'location'>;
+}
+
+export interface DockProps {
+  socialLinks: SocialLinks;
+  email: string;
+}

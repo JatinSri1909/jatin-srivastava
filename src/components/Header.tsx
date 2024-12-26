@@ -1,11 +1,7 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
 import { Container } from './Container';
-import { ResumeData } from '../types/resume';
-
-interface HeaderProps {
-  data: Pick<ResumeData, 'name' | 'title' | 'bio' | 'location'>;
-}
+import { HeaderProps } from '../types/resume';
 
 export const Header: React.FC<HeaderProps> = ({ data }) => {
   const firstName = data.name.split(' ')[0];

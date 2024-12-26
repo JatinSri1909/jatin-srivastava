@@ -1,10 +1,6 @@
 import { Container } from './Container';
-import { Skill } from '../types/resume';
+import { Skill, SkillsProps } from '../types/resume';
 import { SkillIcon } from './SkillIcon';
-
-interface SkillsProps {
-  skills: Skill[];
-}
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (

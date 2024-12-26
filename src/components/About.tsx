@@ -1,11 +1,7 @@
 import React from 'react';
 import { Container } from './Container';
 import { Book, Globe } from 'lucide-react';
-
-interface AboutProps {
-  interests: string[];
-  learning: string[];
-}
+import { AboutProps } from '../types/resume';
 
 export const About: React.FC<AboutProps> = ({ interests, learning }) => {
   return (
