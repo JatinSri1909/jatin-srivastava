@@ -56,12 +56,12 @@ export const resumeData: ResumeData = {
       liveUrl: "https://photofy-psi.vercel.app/",
     },
     {
-      title: "Multiplayer Chess Game",
-      description: "Developed a real-time chess platform that accommodated up to 100 simultaneous games without user login. Established real-time communication among players by implementing Socket.io.",
-      technologies: ["JavaScript", "React", "Express", "Node", "Socket.io"],
+      title: "Chess P2P",
+      description: "Built a real-time chess platform with integrated video calling capabilities, supporting up to 100 simultaneous games. Implemented WebRTC for peer-to-peer video communication and Socket.io for real-time game state synchronization, creating an immersive multiplayer experience.",
+      technologies: ["Next.js 15", "TypeScript", "Express", "Node", "Socket.io", "WebRTC"],
       imageUrl: "/chess.png",
       githubUrl: "https://github.com/JatinSri1909?tab=repositories&q=multiplayer&type=&language=&sort=multiplayer-chess-game-client",
-      liveUrl: "https://multiplayer-chess-game-client.vercel.app/",
+      liveUrl: "https://chess-p2p.vercel.app/",
     },
     {
       title: "Notes API",
