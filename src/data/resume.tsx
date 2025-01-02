@@ -60,7 +60,7 @@ export const resumeData: ResumeData = {
       description: "Built a real-time chess platform with integrated video calling capabilities, supporting up to 100 simultaneous games. Implemented WebRTC for peer-to-peer video communication and Socket.io for real-time game state synchronization, creating an immersive multiplayer experience.",
       technologies: ["Next.js 15", "TypeScript", "Express", "Node", "Socket.io", "WebRTC"],
       imageUrl: "/chess.png",
-      githubUrl: "https://github.com/JatinSri1909?tab=repositories&q=multiplayer&type=&language=&sort=multiplayer-chess-game-client",
+      githubUrl: "https://github.com/JatinSri1909/chess-p2p",
       liveUrl: "https://chess-p2p.vercel.app/",
     },
     {
