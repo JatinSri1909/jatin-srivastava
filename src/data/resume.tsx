@@ -22,28 +22,31 @@ export const resumeData: ResumeData = {
   ],
   skills: [
     {
-      category: "Frontend",
-      items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"]
-    },
-    {
-      category: "Backend",
-      items: ["Node.js", "Express.js", "WebRTC", "WebSockets", "BullMQ"]
-    },
-    {
-      category: "Databases",
-      items: ["PostgreSQL", "MySQL", "MongoDB"]
-    },
-    {
-      category: "DevOps & Tools",
-      items: ["Docker", "Linux", "Git", "GitHub"]
-    },
-    {
-      category: "Message Brokering",
-      items: ["Kafka", "Redis"]
-    },
-    {
-      category: "Languages",
-      items: ["Python", "C++"]
+      category: "",
+      items: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "WebRTC",
+        "WebSockets",
+        "BullMQ",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Docker",
+        "Linux",
+        "Git",
+        "GitHub",
+        "Kafka",
+        "Redis",
+        "Python",
+        "C++"
+      ]
     }
   ],
   projects: [

@@ -41,7 +41,10 @@ export interface ResumeData {
   socialLinks: SocialLinks;
   interests: string[];
   learning: string[];
-  skills: Skill[];
+  skills: Array<{
+    category: string;
+    items: string[];
+  }>;
   experience: Experience[];
   education: Education[];
   projects: Project[];
