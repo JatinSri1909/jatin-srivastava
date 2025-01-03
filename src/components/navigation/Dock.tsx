@@ -5,8 +5,8 @@ import { DockProps } from '../../types/resume';
 
 export const Dock: React.FC<DockProps> = ({ socialLinks, email }) => {
   return (
-    <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 
-      backdrop-blur-sm rounded-[5px] px-3 md:px-6 py-2 md:py-3 border border-gray-200 dark:border-gray-800 z-50 
+    <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 
+      rounded-[5px] px-3 md:px-6 py-2 md:py-3 border border-gray-200 dark:border-gray-800 z-50 
       w-auto min-w-[180px] max-w-[90%] md:w-auto">
       <div className="flex items-center justify-evenly md:justify-start gap-3 md:gap-6">
         {socialLinks.github && (

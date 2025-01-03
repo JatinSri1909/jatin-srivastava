@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-950 transition-colors">
       <Navbar />
-      <div className="pt-12 md:pt-16"> {/* Reduced from pt-16/pt-20 */}
+      <div className="pt-12 md:pt-16 pb-24">
         <Header 
           data={{
             name: resumeData.name,
