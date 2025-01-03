@@ -13,9 +13,10 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden 
-              hover:border-gray-300 dark:hover:border-slate-600 transition-colors flex flex-col
-              bg-white/50 dark:bg-slate-900/50"
+            className="group bg-white dark:bg-slate-900 rounded-lg overflow-hidden 
+              border border-gray-200 dark:border-slate-800 hover:border-gray-300 
+              dark:hover:border-slate-700 transition-all duration-300
+              hover:shadow-md dark:hover:shadow-slate-900/50"
           >
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-3">

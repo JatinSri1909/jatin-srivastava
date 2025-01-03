@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
       <div className="space-y-8">
         <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-100">
           Hi, I'm {firstName}{' '}
-          <span className="text-gray-600 dark:text-gray-400">{lastName}</span> 👋
+          <span className="text-blue-600 dark:text-blue-400">{lastName}</span> 👋
         </h1>
         <h2 className="text-2xl text-gray-600 dark:text-gray-400">
           {data.title}
