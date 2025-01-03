@@ -3,32 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { Container } from './Container';
 import { ProjectsProps } from '../types/resume';
 
-// Predefined light colors array
-const lightColors = [
-  'hsl(0, 85%, 80%)',     // Soft Red
-  'hsl(30, 85%, 80%)',    // Soft Orange
-  'hsl(60, 85%, 80%)',    // Soft Yellow
-  'hsl(120, 85%, 75%)',   // Soft Green
-];
-
-// Function to get dark version of the color (for dark mode)
-const getDarkVersion = (color: string) => {
-  const hue = color.match(/\d+/)?.[0];
-  return `hsl(${hue}, 60%, 70%)`; // Slightly darker but still colorful for dark mode
-};
-
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
-  // Assign colors to projects cyclically
-  const projectColors = React.useMemo(() => 
-    projects.map((_, index) => {
-      const lightColor = lightColors[index % lightColors.length];
-      return {
-        light: lightColor,
-        dark: getDarkVersion(lightColor)
-      };
-    }), [projects.length]
-  );
-
   return (
     <Container className="py-10">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-8">
@@ -39,40 +14,18 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <div
             key={index}
             className="border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden 
-              hover:border-gray-300 dark:hover:border-slate-600 transition-colors flex flex-col"
+              hover:border-gray-300 dark:hover:border-slate-600 transition-colors flex flex-col
+              bg-white/50 dark:bg-slate-900/50"
           >
-            <div 
-              className="relative w-full h-48"
-              style={{
-                backgroundColor: `var(--project-bg-${index})`,
-              }}
-            >
-              <style>
-                {`
-                  :root {
-                    --project-bg-${index}: ${projectColors[index].light};
-                  }
-                  .dark {
-                    --project-bg-${index}: ${projectColors[index].dark};
-                  }
-                `}
-              </style>
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-full object-contain p-2"
-              />
-            </div>
-
-            <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-2">
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-3">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-slate-300 text-sm mb-4">
+              <p className="text-gray-600 dark:text-slate-300 text-sm mb-6">
                 {project.description}
               </p>
               
-              <div className="flex-grow" /> {/* Spacer */}
+              <div className="flex-grow" />
               
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
