@@ -67,12 +67,12 @@ export const resumeData: ResumeData = {
       liveUrl: "https://chess-p2p.vercel.app/",
     },
     {
-      title: "Notes API",
-      description: "Constructed a comprehensive RESTful API for handling user notes with advanced token-based authentication strategies. Implemented intuitive API routes for create, read, update, and delete operations.",
-      technologies: ["JavaScript", "Express", "Node", "MongoDB", "JWT", "Bcrypt", "RESTful API"],
-      imageUrl: "/notes.png",
-      githubUrl: "https://github.com/JatinSri1909/notes-api",
-      liveUrl: "https://jatin-notes-api.onrender.com/",
+      title: "Notebook",
+      description: "Created a React Native application for note-taking, featuring offline access, rich text formatting, and synchronization across devices.",
+      technologies: ["React Native", "TypeScript", "Expo"],
+      imageUrl: "/notebook.png",
+      githubUrl: "https://github.com/JatinSri1909/notebook",
+      liveUrl: "https://github.com/JatinSri1909/notebook",
     },
     {
       title: "Online Code Compiler",
