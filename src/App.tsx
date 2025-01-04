@@ -9,8 +9,7 @@ import { resumeData } from './data/resume';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 
-      dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 transition-colors">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors">
       <Navbar />
       <div className="pt-12 md:pt-16 pb-24">
         <Header 
