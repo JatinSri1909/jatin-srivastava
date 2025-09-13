@@ -37,7 +37,7 @@ export function AboutSection() {
               <div className="animate-slide-in-left animate-delay-200">
                 <h3 className="text-2xl font-semibold mb-4">Background</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm a passionate software developer currently pursuing B.Tech in Computer Science at KIET Group of
+                  I&apos;m a passionate software developer currently pursuing B.Tech in Computer Science at KIET Group of
                   Institutions. With hands-on experience in full-stack development, I specialize in building scalable
                   web applications using modern technologies.
                 </p>

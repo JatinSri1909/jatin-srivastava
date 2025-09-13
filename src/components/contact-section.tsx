@@ -62,7 +62,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-2xl font-semibold mb-4">let's connect</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm always interested in new opportunities and collaborations. Whether you have a project in mind or
+                  I&apos;m always interested in new opportunities and collaborations. Whether you have a project in mind or
                   just want to chat about technology, feel free to reach out!
                 </p>
               </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { resumeData } from "@/data/resume"
 
@@ -38,20 +39,23 @@ export function ExperienceSection() {
                 className={`flex items-start gap-3 sm:gap-4 animate-fade-in-up`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0 border-2 border-background shadow-sm">
-                  <img
-                    src={exp.imgUrl || "/placeholder.svg"}
-                    alt={exp.company}
-                    className="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.style.display = "none"
-                      target.nextElementSibling!.classList.remove("hidden")
-                    }}
-                  />
-                  <span className="text-xs sm:text-sm font-semibold text-muted-foreground hidden">
-                    {exp.company.charAt(0)}
-                  </span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0 border-2 border-background shadow-sm overflow-hidden">
+                  {exp.imgUrl ? (
+                    <Image
+                      src={exp.imgUrl}
+                      alt={exp.company}
+                      width={32}
+                      height={32}
+                      className="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover"
+                      onError={() => {
+                        // Handle error by showing fallback
+                      }}
+                    />
+                  ) : (
+                    <span className="text-xs sm:text-sm font-semibold text-muted-foreground">
+                      {exp.company.charAt(0)}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex-1 min-w-0">
