@@ -109,7 +109,7 @@ export const resumeData: ResumeData = {
     {
       company: "Sploot",
       position: "Software Developer Intern",
-      duration: "July, 2024 - September, 2024",
+      duration: "July, 2025 - September, 2025",
       description: [
         /*
         "created a full-featured admin dashboard that manages blogs, users, subscriptions, discounts, and support queries on the platform.",
