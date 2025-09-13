@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Menu, X } from "lucide-react"
+import { useTheme } from "../provider/theme-provider"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isDark, setIsDark] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,14 +19,8 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setIsDark(isDarkMode)
-  }, [])
-
   const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark")
-    setIsDark(!isDark)
+    setTheme(theme === "light" ? "dark" : "light")
   }
 
   const scrollToSection = (sectionId: string) => {
@@ -77,7 +72,7 @@ export function Navigation() {
               onClick={toggleTheme}
               className="hover:bg-muted transition-colors duration-200"
             >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              {theme ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
 
             {/* Mobile menu button */}
