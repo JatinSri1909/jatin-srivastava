@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react"
+import { ThemeProvider } from "@/provider/theme-provider"
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,9 +34,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${geistSans.variable} ${geistMono.variable}`}>
-        <Suspense fallback={null}>{children}</Suspense>
+        <ThemeProvider
+          defaultTheme="system"
+          storageKey="portfolio-theme"
+        >
+          <Suspense fallback={null}>{children}</Suspense>
+        </ThemeProvider>
       </body>
     </html>
   )
