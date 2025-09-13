@@ -60,7 +60,7 @@ export function ContactSection() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6 animate-slide-in-left animate-delay-200">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">let's connect</h3>
+                <h3 className="text-2xl font-semibold mb-4">let&apos;s connect</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   I&apos;m always interested in new opportunities and collaborations. Whether you have a project in mind or
                   just want to chat about technology, feel free to reach out!
