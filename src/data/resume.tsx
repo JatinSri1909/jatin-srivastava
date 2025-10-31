@@ -2,7 +2,7 @@ import type { ResumeData } from "../types/resume"
 
 export const resumeData: ResumeData = {
   name: "jatin srivastava",
-  title: "software developer",
+  title: "software engineer",
   bio: "one commit a day, keeps the bug away",
   location: "New Delhi, India",
   email: "jatin.srivastaval1909@gmail.com",
@@ -108,8 +108,8 @@ export const resumeData: ResumeData = {
   experience: [
     {
       company: "Sploot",
-      position: "Software Developer Intern",
-      duration: "July, 2025 - September, 2025",
+      position: "Software Engineer Intern",
+      duration: "July, 2025 - { still_going_on }",
       description: [
         /*
         "created a full-featured admin dashboard that manages blogs, users, subscriptions, discounts, and support queries on the platform.",
