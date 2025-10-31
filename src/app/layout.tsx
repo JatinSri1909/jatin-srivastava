@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jatin Srivastava - Software Developer",
+  title: "Jatin Srivastava - Software Engineer",
   description:
-    "Portfolio of Jatin Srivastava - Full-stack developer specializing in React, Next.js, and modern web technologies",
+    "Portfolio of Jatin Srivastava - Software Engineer",
   keywords: ["Jatin Srivastava", "Software Developer", "Full Stack", "React", "Next.js", "TypeScript"],
   authors: [{ name: "Jatin Srivastava" }],
   openGraph: {
-    title: "Jatin Srivastava - Software Developer",
+    title: "Jatin Srivastava - Software Engineer",
     description:
-      "Portfolio of Jatin Srivastava - Full-stack developer specializing in React, Next.js, and modern web technologies",
+      "Portfolio of Jatin Srivastava - Software Engineer",
     type: "website",
   },
 }
