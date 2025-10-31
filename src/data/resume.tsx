@@ -119,7 +119,7 @@ export const resumeData: ResumeData = {
       ],
       technologies: ["React.js", "TypeScript", "Nest.js", "Jenkins", "Vite", "Playwright"],
       imgUrl:
-        "https://media.licdn.com/dms/image/v2/D4D0BAQH0Q8LeAExX1Q/company-logo_200_200/B4DZaueSqiHsAM-/0/1746683899255?e=1760572800&v=beta&t=i5YIfLlAE9W0W5iaIVJIzV7goJqNtiOSeJMJbR_E5ng",
+        "https://static-asset.inc42.com/logo/sploot-1.png",
     },
   ],
   education: [
