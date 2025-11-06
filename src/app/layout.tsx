@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Jatin Srivastava - Software Engineer",
     type: "website",
+    images: [
+      {
+        url: "/jatin.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Jatin Srivastava",
+      },
+    ],
   },
 }
 
