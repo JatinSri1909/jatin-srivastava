@@ -3,7 +3,7 @@ import type { ResumeData } from "../types/resume"
 export const resumeData: ResumeData = {
   name: "jatin srivastava",
   title: "software engineer",
-  bio: "one commit a day, keeps the bug away",
+  bio: "Code is a poetry",
   location: "New Delhi, India",
   email: "jatin.srivastaval1909@gmail.com",
   socialLinks: {
@@ -17,10 +17,12 @@ export const resumeData: ResumeData = {
         "JavaScript",
         "TypeScript",
         "Python",
-        "C++",
         "React.js",
+        "WebGL",
+        "Three.js",
         "Next.js",
         "Node.js",
+        "Nest.js",
         "Express.js",
         "WebRTC",
         "WebSockets",
@@ -29,8 +31,12 @@ export const resumeData: ResumeData = {
         "MySQL",
         "MongoDB",
         "Docker",
-        "Kafka",
+        "Jenkins",
         "Redis",
+        "Jest",
+        "Appium",
+        "Playwright",
+        "AWS",
         "Linux",
         "Git",
         "GitHub",
@@ -49,20 +55,28 @@ export const resumeData: ResumeData = {
       liveUrl: "https://chess-p2p.vercel.app/",
     },
     {
-      title: "ecommerce app",
+      title: "road rage",
       description:
-        "built a full-stack e-commerce platform with Next.js and TypeScript featuring product listings, secure authentication, and optimized performance. Integrated MongoDB with SWR for efficient data caching, implemented image optimization, and deployed with Vercel for scalability.",
-      technologies: ["next.js 15", "typeScript", "express.js", "mongoDB", "swr", "next auth", "authorize", "tailwindcss"],
-      githubUrl: "private",
-      liveUrl: "https://shop.raizadafuel.com/",
+        "built a browser-based 3D racing game using Three.js, featuring real-time velocity-vector physics with separate forward/lateral grip for realistic drift mechanics.",
+      technologies: ["typeScript", "react.js", "vite", "webGL", "three.js"],
+      githubUrl: "https://github.com/JatinSri1909/road-rage",
+      liveUrl: "https://road-rage-mu.vercel.app/",
     },
     {
       title: "photofy",
       description:
-        "developed a cross-platform image editing web app with features like restoration, recoloring, and background elimination for user-uploaded photos. Integrated Cloudinary for efficient image processing and improved overall application performance.",
+        "developed an AI image editing web app with features like restoration, recoloring, and background elimination for user-uploaded photos. Integrated Cloudinary for efficient image processing and improved overall application performance.",
       technologies: ["typeScript", "next.js 14", "tailwindcss", "cloudinary", "stripe", "clerk auth", "mongoDB"],
       githubUrl: "https://github.com/JatinSri1909/photofy",
       liveUrl: "https://photofy-psi.vercel.app/",
+    },
+    {
+      title: "preplit",
+      description:
+        "developed an AI image editing web app with features like restoration, recoloring, and background elimination for user-uploaded photos. Integrated Cloudinary for efficient image processing and improved overall application performance.",
+      technologies: ["typeScript", "next.js 16", "tailwindcss", "groq API", "node.js", "express.js", "mongoDB"],
+      githubUrl: "https://github.com/JatinSri1909/preplit-app",
+      liveUrl: "https://preplit-app.vercel.app/",
     },
     {
       title: "slack connect",
@@ -80,7 +94,7 @@ export const resumeData: ResumeData = {
       githubUrl: "https://github.com/JatinSri1909?tab=repositories&q=task+management&type=&language=&sort=",
       liveUrl: "https://task-master-one-zeta.vercel.app/",
     },
-{
+    {
       title: "track fast",
       description:
         "TrackFast is a modern, full-stack expense tracking application. Powers the TrackFast expense tracker with a secure, robust REST API for user management, expense CRUD, and analytics.",
@@ -108,16 +122,28 @@ export const resumeData: ResumeData = {
   experience: [
     {
       company: "Sploot",
-      position: "Software Engineer Intern",
-      duration: "July, 2025 - { still_going_on }",
+      position: "Software Engineer",
+      duration: "July, 2025 - September, 2026",
       description: [
-        /*
-        "created a full-featured admin dashboard that manages blogs, users, subscriptions, discounts, and support queries on the platform.",
-        "streamlined internal operations for 10+ teams by centralizing workflows, reducing manual overhead by 50%.",
-        "implemented modern development practices including CI/CD pipelines and automated testing"
-        */
+        "Improved backend reliability, delivered key features, and migrated the n8n service from Python to TypeScript (Nest.js).",
+        "Integrated WebEngage user attributes and events into the backend to track user activity and behavior, powering data-driven marketing campaigns.",
+        "Built a pipeline to automate generation of Android APK and AAB builds for both the customer and partner apps, cutting manual release effort.",
+        "Set up a Docker-based Jenkins project used to deploy every Sploot service, standardizing and simplifying deployments across the organization.",
       ],
-      technologies: ["React.js", "TypeScript", "Nest.js", "Jenkins", "Vite", "Playwright"],
+      technologies: ["Remix.js", "TypeScript", "Nest.js", "Jenkins", "Appium", "Jest", "Playwright", "AWS"],
+      imgUrl:
+        "/sploot.jpeg",
+    },
+    {
+      company: "Sploot",
+      position: "Software Engineer Intern",
+      duration: "July, 2025 - May, 2026",
+      description: [
+        "Created an admin dashboard using React, TypeScript, and Nest.js, improving operational efficiency and reducing manual effort.",
+        "Wrote Playwright tests for the main website, expediting QA cycles and detecting UI defects more rapidly.",
+        "Developed help and support interfaces for partner mobile app, enabling partners to resolve queries faster."
+      ],
+      technologies: ["React.js", "React Native", "TypeScript", "Nest.js", "Jenkins", "Vite", "Playwright"],
       imgUrl:
         "/sploot.jpeg",
     },
@@ -129,4 +155,4 @@ export const resumeData: ResumeData = {
       duration: "2022-26",
     },
   ],
-}
+};
