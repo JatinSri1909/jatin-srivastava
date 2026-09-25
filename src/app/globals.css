@@ -5,78 +5,79 @@
 
 :root {
   --background: oklch(1 0 0); /* Pure white */
-  --foreground: oklch(0.2 0 0); /* Dark gray for text */
-  --card: oklch(0.98 0 0); /* Very light gray for cards */
-  --card-foreground: oklch(0.25 0 0); /* Card text */
+  --foreground: oklch(0.15 0 0); /* Near-black text */
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.15 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0 0);
-  --primary: oklch(0.25 0 0); /* Dark gray primary */
-  --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.45 0.15 264); /* Indigo accent */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.96 0 0); /* Light muted background */
-  --muted-foreground: oklch(0.45 0 0); /* Muted text */
-  --accent: oklch(0.45 0.15 264); /* Indigo accent */
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.15 0 0); /* Near-black primary */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.94 0 0); /* Neutral pill background */
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.58 0.16 156); /* Muted signal green accent */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0 0); /* Light border */
+  --border: oklch(0.9 0 0);
   --input: oklch(0.98 0 0);
-  --ring: oklch(0.45 0.15 264 / 0.5); /* Indigo ring */
+  --ring: oklch(0.15 0 0 / 0.3);
   --chart-1: oklch(0.45 0.15 264);
   --chart-2: oklch(0.4 0.15 280);
   --chart-3: oklch(0.35 0.15 296);
   --chart-4: oklch(0.3 0.15 312);
   --chart-5: oklch(0.25 0.15 328);
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.2 0 0);
-  --sidebar-primary: oklch(0.45 0.15 264);
+  --sidebar-primary: oklch(0.15 0 0);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.96 0 0);
   --sidebar-accent-foreground: oklch(0.25 0 0);
   --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.45 0.15 264 / 0.5);
+  --sidebar-ring: oklch(0.15 0 0 / 0.3);
 }
 
 .dark {
-  --background: oklch(0.08 0 0); /* Very dark background */
-  --foreground: oklch(0.95 0 0); /* Light text */
-  --card: oklch(0.12 0 0); /* Dark card background */
-  --card-foreground: oklch(0.95 0 0);
+  --background: oklch(0.06 0 0); /* Near-black background */
+  --foreground: oklch(0.96 0 0); /* Off-white text */
+  --card: oklch(0.1 0 0); /* Dark card background */
+  --card-foreground: oklch(0.96 0 0);
   --popover: oklch(0.08 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.95 0 0); /* Light primary in dark mode */
+  --popover-foreground: oklch(0.96 0 0);
+  --primary: oklch(0.96 0 0); /* Off-white primary in dark mode */
   --primary-foreground: oklch(0.08 0 0);
-  --secondary: oklch(0.55 0.15 264); /* Brighter indigo in dark */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.55 0.15 264);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.5 0.2 25);
+  --secondary: oklch(0.16 0 0); /* Neutral pill background */
+  --secondary-foreground: oklch(0.96 0 0);
+  --muted: oklch(0.13 0 0);
+  --muted-foreground: oklch(0.62 0 0);
+  --accent: oklch(0.72 0.17 156); /* Muted signal green accent */
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.15 0 0);
-  --ring: oklch(0.55 0.15 264 / 0.5);
+  --border: oklch(0.19 0 0);
+  --input: oklch(0.14 0 0);
+  --ring: oklch(0.7 0 0 / 0.4);
   --chart-1: oklch(0.55 0.15 264);
   --chart-2: oklch(0.6 0.15 280);
   --chart-3: oklch(0.65 0.15 296);
   --chart-4: oklch(0.7 0.15 312);
   --chart-5: oklch(0.75 0.15 328);
-  --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.55 0.15 264);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.15 0 0);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: oklch(0.55 0.15 264 / 0.5);
+  --sidebar: oklch(0.08 0 0);
+  --sidebar-foreground: oklch(0.96 0 0);
+  --sidebar-primary: oklch(0.7 0.17 156);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.14 0 0);
+  --sidebar-accent-foreground: oklch(0.96 0 0);
+  --sidebar-border: oklch(0.19 0 0);
+  --sidebar-ring: oklch(0.7 0 0 / 0.4);
 }
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -211,4 +212,41 @@
 .animate-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+/* Soft radial glow used behind the hero avatar */
+.radial-glow {
+  background: radial-gradient(closest-side, var(--foreground) 0%, transparent 70%);
+  opacity: 0.06;
+}
+
+/* Subtle dot grid used behind project card previews */
+.dot-grid {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Faint corner crosses, used to bookend decorative panels */
+.corner-marks {
+  position: relative;
+}
+
+.corner-marks::before,
+.corner-marks::after {
+  content: "+";
+  position: absolute;
+  color: var(--muted-foreground);
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.corner-marks::before {
+  top: -0.55rem;
+  left: -0.55rem;
+}
+
+.corner-marks::after {
+  bottom: -0.55rem;
+  right: -0.55rem;
 }
