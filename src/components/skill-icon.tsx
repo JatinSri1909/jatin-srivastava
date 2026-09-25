@@ -20,7 +20,14 @@ import {
     SiApachekafka,
     SiRedis,
     SiPython,
-    SiCplusplus
+    SiCplusplus,
+    SiWebgl,
+    SiThreedotjs,
+    SiNestjs,
+    SiJenkins,
+    SiJest,
+    SiAppium,
+    SiAmazonwebservices,
 } from 'react-icons/si';
 import { BiMessageSquareDetail } from 'react-icons/bi';
 
@@ -53,6 +60,13 @@ export const SkillIcon: React.FC<SkillIconProps> = ({ name, className = '' }) =>
         'Redis': SiRedis,
         'Python': SiPython,
         'C++': SiCplusplus,
+        'WebGL': SiWebgl,
+        'Three.js': SiThreedotjs,
+        'Nest.js': SiNestjs,
+        'Jenkins': SiJenkins,
+        'Jest': SiJest,
+        'Appium': SiAppium,
+        'AWS': SiAmazonwebservices,
     };
 
     const Icon = iconMap[name];
