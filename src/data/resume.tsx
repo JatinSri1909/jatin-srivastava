@@ -73,9 +73,9 @@ export const resumeData: ResumeData = {
     {
       title: "preplit",
       description:
-        "developed an AI image editing web app with features like restoration, recoloring, and background elimination for user-uploaded photos. Integrated Cloudinary for efficient image processing and improved overall application performance.",
+        "built an AI-powered interview prep kit generator that turns a job description and company URL into categorized practice questions with automatic coverage gap-filling, a day-by-day study schedule, and a confidence-weighted practice mode with resume-to-requirements match scoring.",
       technologies: ["typeScript", "next.js 16", "tailwindcss", "groq API", "node.js", "express.js", "mongoDB"],
-      githubUrl: "https://github.com/JatinSri1909/preplit-app",
+      githubUrl: "https://github.com/JatinSri1909/preplit",
       liveUrl: "https://preplit-app.vercel.app/",
     },
     {
